@@ -97,11 +97,11 @@
 		7B14DAF91C94974900C37323 /* Sparky */ = {
 			isa = PBXGroup;
 			children = (
+				7B14DB2A1C94A5C200C37323 /* ViewModel */,
+				7B14DB291C94A5BC00C37323 /* View */,
+				7B14DB281C94A5B600C37323 /* Model */,
 				7B14DAFA1C94974900C37323 /* AppDelegate.swift */,
-				7B14DAFC1C94974900C37323 /* ViewController.swift */,
-				7B14DAFE1C94974900C37323 /* Main.storyboard */,
 				7B14DB011C94974900C37323 /* Assets.xcassets */,
-				7B14DB031C94974900C37323 /* LaunchScreen.storyboard */,
 				7B14DB061C94974900C37323 /* Info.plist */,
 			);
 			path = Sparky;
@@ -123,6 +123,46 @@
 				7B14DB1C1C94974900C37323 /* Info.plist */,
 			);
 			path = SparkyUITests;
+			sourceTree = "<group>";
+		};
+		7B14DB281C94A5B600C37323 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		7B14DB291C94A5BC00C37323 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7B14DB2C1C94A5D600C37323 /* Storyboards */,
+				7B14DB2B1C94A5CE00C37323 /* ViewControllers */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		7B14DB2A1C94A5C200C37323 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		7B14DB2B1C94A5CE00C37323 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7B14DAFC1C94974900C37323 /* ViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		7B14DB2C1C94A5D600C37323 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				7B14DAFE1C94974900C37323 /* Main.storyboard */,
+				7B14DB031C94974900C37323 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
