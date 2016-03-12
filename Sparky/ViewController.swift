@@ -10,10 +10,25 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var dogTest: UIImageView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        //TEST   
+        var imgListArray :[UIImage] = []
+        for countValue in 1...10
+        {
+            
+            var strImageName : String = "frame-\(countValue).png"
+            var image  = UIImage(named:strImageName)
+            if image != nil{
+            imgListArray.append(image!)
+            }
+        }
+        
+        self.dogTest.animationImages = imgListArray;
+        self.dogTest.animationDuration = 1.0
+        self.dogTest.startAnimating()
         
     }
 
