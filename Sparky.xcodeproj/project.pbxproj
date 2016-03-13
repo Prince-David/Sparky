@@ -15,6 +15,7 @@
 		7B14DB101C94974900C37323 /* SparkyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B14DB0F1C94974900C37323 /* SparkyTests.swift */; };
 		7B14DB1B1C94974900C37323 /* SparkyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B14DB1A1C94974900C37323 /* SparkyUITests.swift */; };
 		7B14DB2E1C94CE9900C37323 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B14DB2D1C94CE9900C37323 /* LoginViewController.swift */; };
+		7B14DB301C94F7ED00C37323 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B14DB2F1C94F7ED00C37323 /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		7B14DB1A1C94974900C37323 /* SparkyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparkyUITests.swift; sourceTree = "<group>"; };
 		7B14DB1C1C94974900C37323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B14DB2D1C94CE9900C37323 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7B14DB2F1C94F7ED00C37323 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 			children = (
 				7B14DAFC1C94974900C37323 /* ViewController.swift */,
 				7B14DB2D1C94CE9900C37323 /* LoginViewController.swift */,
+				7B14DB2F1C94F7ED00C37323 /* WelcomeViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B14DB2E1C94CE9900C37323 /* LoginViewController.swift in Sources */,
+				7B14DB301C94F7ED00C37323 /* WelcomeViewController.swift in Sources */,
 				7B14DAFD1C94974900C37323 /* ViewController.swift in Sources */,
 				7B14DAFB1C94974900C37323 /* AppDelegate.swift in Sources */,
 			);

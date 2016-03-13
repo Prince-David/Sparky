@@ -55,5 +55,14 @@ class LoginViewController: UIViewController {
     //Call the login page
     @IBAction func loginButtonPushed(sender: AnyObject) {
         
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+        self.navigationItem.hidesBackButton = true
+        let welcomeView : WelcomeViewController = mainStoryboard.instantiateViewControllerWithIdentifier("welcomeScreen") as! WelcomeViewController
+
+        welcomeView.navigationItem.hidesBackButton = true
+        let navigationController = UINavigationController(rootViewController: welcomeView)
+        navigationController.navigationBar.backgroundColor = self.navigationController?.navigationBar.backgroundColor
+        self.navigationController?.pushViewController(welcomeView, animated: true)
+
     }
 }
