@@ -14,7 +14,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        // Do any additional setup afte r loading the view, typically from a nib.
         var imgListArray :[UIImage] = []
         for countValue in 0...6
         {
