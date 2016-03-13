@@ -13,6 +13,8 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Welcome"
+        
+        self.navigationItem.hidesBackButton = true
 
     }
     @IBAction func meetAction(sender: AnyObject) {
@@ -20,10 +22,10 @@ class WelcomeViewController: UIViewController {
         self.navigationItem.hidesBackButton = true
         let meetView : MeetViewController = mainStoryboard.instantiateViewControllerWithIdentifier("doctorsPage") as! MeetViewController
         
-        let navigationController = UINavigationController(rootViewController: meetView)
-        navigationController.navigationBar.backgroundColor = self.navigationController?.navigationBar.backgroundColor
-        navigationController.navigationBar.tintColor = UIColor.whiteColor()
-        navigationController.navigationBar.titleTextAttributes =  [NSForegroundColorAttributeName:UIColor.whiteColor()]
+//        let navigationController = UINavigationController(rootViewController: meetView)
+//        navigationController.navigationBar.backgroundColor = self.navigationController?.navigationBar.backgroundColor
+//        navigationController.navigationBar.tintColor = UIColor.whiteColor()
+//        navigationController.navigationBar.titleTextAttributes =  [NSForegroundColorAttributeName:UIColor.whiteColor()]
 
         self.navigationController?.pushViewController(meetView, animated: true)
     }
