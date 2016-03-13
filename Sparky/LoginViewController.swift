@@ -28,21 +28,7 @@ class LoginViewController: UIViewController {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
         view.addGestureRecognizer(tap)
         
-//        // Do any additional setup after loading the view, typically from a nib.
-//        var imgListArray :[UIImage] = []
-//        for countValue in 1...7
-//        {
-//            
-//            var strImageName : String = "dalmation-\(countValue).png"
-//            var image  = UIImage(named:strImageName)
-//            if image != nil{
-//                imgListArray.append(image!)
-//            }
-//        }
-//        
-//        self.loginImage.animationImages = imgListArray;
-//        self.loginImage.animationDuration = 1.0
-//        self.loginImage.startAnimating()
+
 
     }
     

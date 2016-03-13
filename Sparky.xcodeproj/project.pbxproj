@@ -16,6 +16,8 @@
 		7B14DB1B1C94974900C37323 /* SparkyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B14DB1A1C94974900C37323 /* SparkyUITests.swift */; };
 		7B14DB2E1C94CE9900C37323 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B14DB2D1C94CE9900C37323 /* LoginViewController.swift */; };
 		7B14DB301C94F7ED00C37323 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B14DB2F1C94F7ED00C37323 /* WelcomeViewController.swift */; };
+		7B14DB321C95247700C37323 /* MeetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B14DB311C95247700C37323 /* MeetController.swift */; };
+		7B14DB341C95AD1D00C37323 /* PlanDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B14DB331C95AD1D00C37323 /* PlanDayViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		7B14DB1C1C94974900C37323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B14DB2D1C94CE9900C37323 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7B14DB2F1C94F7ED00C37323 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		7B14DB311C95247700C37323 /* MeetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetController.swift; sourceTree = "<group>"; };
+		7B14DB331C95AD1D00C37323 /* PlanDayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanDayViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +162,8 @@
 				7B14DAFC1C94974900C37323 /* ViewController.swift */,
 				7B14DB2D1C94CE9900C37323 /* LoginViewController.swift */,
 				7B14DB2F1C94F7ED00C37323 /* WelcomeViewController.swift */,
+				7B14DB311C95247700C37323 /* MeetController.swift */,
+				7B14DB331C95AD1D00C37323 /* PlanDayViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -302,10 +308,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B14DB341C95AD1D00C37323 /* PlanDayViewController.swift in Sources */,
 				7B14DB2E1C94CE9900C37323 /* LoginViewController.swift in Sources */,
 				7B14DB301C94F7ED00C37323 /* WelcomeViewController.swift in Sources */,
 				7B14DAFD1C94974900C37323 /* ViewController.swift in Sources */,
 				7B14DAFB1C94974900C37323 /* AppDelegate.swift in Sources */,
+				7B14DB321C95247700C37323 /* MeetController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
