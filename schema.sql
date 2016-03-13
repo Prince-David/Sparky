@@ -28,6 +28,18 @@ create table patientward (
     wardid integer not null
 );
 
+drop table if exists emotions;
+create table emotions (
+    id integer primary key autoincrement,
+    patientid integer not null,
+    surprise double,
+    anger double,
+    fear double,
+    happiness double,
+    sadness double,
+    timestamp integer
+);
+
 insert into staff (firstname, lastname, title, speciality) 
 VALUES 
 ('Sarah', 'Arthur', 'Doctor', 'Physician'),

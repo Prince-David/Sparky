@@ -2,6 +2,9 @@ import sqlite3
 from flask import Flask, request, session, g, redirect, url_for, abort, render_template, flash, jsonify
 from contextlib import closing
 import urllib2
+from emotion_api import *
+import json
+import time
 
 #configuration
 DATABASE = '/tmp/sparky.db'
@@ -9,6 +12,7 @@ SECRET_KEY='development key'
 DEBUG = True
 
 _PATIENT_URL = "https://navhealth.herokuapp.com/api/fhir/Patient/{}/$everything"
+
 
 # create app
 app = Flask(__name__)
@@ -60,6 +64,31 @@ def get_staff():
 def get_patient_data():
 	url = _PATIENT_URL.format(request.args.get('fhirid'))
 	return urllib2.urlopen(url).read()
+
+@app.route('/emotion', methods=['POST','GET'])
+def image_emotion():
+	patientid = request.args.get("patientid")
+	if patientid is None:
+		return jsonify(status="Failed", error=-1, message="No patient id")
+	resp = analyze_image_emotion(None)
+	if resp:
+		obj = json.loads(resp)[0]['scores']
+		sadness = obj['sadness']
+		fear = obj['fear']
+		happiness = obj['happiness']
+		anger = obj['anger']
+		surprise = obj['surprise']
+		timestamp = int(time.time())
+		g.db.execute('INSERT into emotions (patientid, surprise, anger, fear, happiness, sadness, timestamp) \
+						VALUES ({},{},{},{},{},{},{})'.format(patientid, surprise, anger, fear, happiness, sadness, timestamp))
+		g.db.commit()
+		return jsonify(status="Success", error=None)
+	else:
+		return jsonify(status="Failed", error=-1)
+
+@app.route('getemotion', method=['POST', 'GET'])
+def get_emotion_values():
+	pass
 
 @app.route('/login', methods=['POST', 'GET'])
 def login():
