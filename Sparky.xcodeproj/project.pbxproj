@@ -18,6 +18,7 @@
 		7B14DB301C94F7ED00C37323 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B14DB2F1C94F7ED00C37323 /* WelcomeViewController.swift */; };
 		7B14DB321C95247700C37323 /* MeetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B14DB311C95247700C37323 /* MeetController.swift */; };
 		7B14DB341C95AD1D00C37323 /* PlanDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B14DB331C95AD1D00C37323 /* PlanDayViewController.swift */; };
+		7B14DB361C95C35900C37323 /* DoctorDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B14DB351C95C35900C37323 /* DoctorDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		7B14DB2F1C94F7ED00C37323 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		7B14DB311C95247700C37323 /* MeetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetController.swift; sourceTree = "<group>"; };
 		7B14DB331C95AD1D00C37323 /* PlanDayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanDayViewController.swift; sourceTree = "<group>"; };
+		7B14DB351C95C35900C37323 /* DoctorDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoctorDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 				7B14DB2F1C94F7ED00C37323 /* WelcomeViewController.swift */,
 				7B14DB311C95247700C37323 /* MeetController.swift */,
 				7B14DB331C95AD1D00C37323 /* PlanDayViewController.swift */,
+				7B14DB351C95C35900C37323 /* DoctorDetailViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 				7B14DB341C95AD1D00C37323 /* PlanDayViewController.swift in Sources */,
 				7B14DB2E1C94CE9900C37323 /* LoginViewController.swift in Sources */,
 				7B14DB301C94F7ED00C37323 /* WelcomeViewController.swift in Sources */,
+				7B14DB361C95C35900C37323 /* DoctorDetailViewController.swift in Sources */,
 				7B14DAFD1C94974900C37323 /* ViewController.swift in Sources */,
 				7B14DAFB1C94974900C37323 /* AppDelegate.swift in Sources */,
 				7B14DB321C95247700C37323 /* MeetController.swift in Sources */,
@@ -538,6 +542,7 @@
 				7B14DB211C94974900C37323 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7B14DB221C94974900C37323 /* Build configuration list for PBXNativeTarget "SparkyTests" */ = {
 			isa = XCConfigurationList;
@@ -546,6 +551,7 @@
 				7B14DB241C94974900C37323 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7B14DB251C94974900C37323 /* Build configuration list for PBXNativeTarget "SparkyUITests" */ = {
 			isa = XCConfigurationList;
@@ -554,6 +560,7 @@
 				7B14DB271C94974900C37323 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -19,8 +20,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iWQ-N3-GfO">
-                                <rect key="frame" x="0.0" y="0.0" width="277" height="169"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iWQ-N3-GfO">
+                                <rect key="frame" x="162" y="88" width="277" height="169"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="169" id="Waj-HC-QK1"/>
                                     <constraint firstAttribute="width" constant="277" id="orW-U4-mNJ"/>
@@ -30,8 +31,8 @@
                                     <action selector="meetAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KrT-Ql-Pij"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eLk-Pw-JH8">
-                                <rect key="frame" x="5" y="177" width="277" height="169"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eLk-Pw-JH8">
+                                <rect key="frame" x="162" y="265" width="277" height="169"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="277" id="Xro-sM-R8g"/>
                                     <constraint firstAttribute="height" constant="169" id="cwR-DE-c7N"/>
@@ -41,27 +42,22 @@
                                     <action selector="playAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PWy-2N-KSa"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OM1-FA-bd7">
-                                <rect key="frame" x="5" y="354" width="277" height="169"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="277" id="8DG-1G-i0m"/>
-                                    <constraint firstAttribute="height" constant="169" id="ucb-nd-ekk"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="planyourday"/>
-                                <connections>
-                                    <action selector="planAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="76W-j6-aoM"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="eLk-Pw-JH8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="4OK-20-Mof"/>
-                            <constraint firstItem="iWQ-N3-GfO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="J0z-Ta-Xbo"/>
-                            <constraint firstItem="OM1-FA-bd7" firstAttribute="top" secondItem="eLk-Pw-JH8" secondAttribute="bottom" constant="8" id="V0i-nt-NHD"/>
+                            <constraint firstItem="eLk-Pw-JH8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-15" id="4OK-20-Mof"/>
+                            <constraint firstItem="iWQ-N3-GfO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="88" id="J0z-Ta-Xbo"/>
                             <constraint firstItem="eLk-Pw-JH8" firstAttribute="top" secondItem="iWQ-N3-GfO" secondAttribute="bottom" constant="8" id="cUI-xs-9pz"/>
-                            <constraint firstItem="OM1-FA-bd7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="pqH-fa-5va"/>
-                            <constraint firstItem="iWQ-N3-GfO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="xhn-fb-vvO"/>
+                            <constraint firstItem="iWQ-N3-GfO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lvn-ZX-pmq"/>
+                            <constraint firstItem="eLk-Pw-JH8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rLh-x4-6Aa"/>
+                            <constraint firstItem="iWQ-N3-GfO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="xhn-fb-vvO"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="xhn-fb-vvO"/>
+                                <exclude reference="4OK-20-Mof"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -195,6 +191,50 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xkp-Bd-ZHu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="405" y="-349"/>
+        </scene>
+        <!--Doctor Detail View Controller-->
+        <scene sceneID="1uk-MC-96a">
+            <objects>
+                <viewController storyboardIdentifier="SelfiePage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="oh7-dZ-CIQ" customClass="DoctorDetailViewController" customModule="Sparky" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nQN-iK-qOq"/>
+                        <viewControllerLayoutGuide type="bottom" id="yki-s4-Qfo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fEh-49-NTA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doggie" translatesAutoresizingMaskIntoConstraints="NO" id="ZPN-KY-mVb">
+                                <rect key="frame" x="20" y="0.0" width="277" height="169"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="277" id="Eg3-2n-NgL"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="169" id="PAM-p0-ICM"/>
+                                    <constraint firstAttribute="width" constant="277" id="PUH-iE-aRk"/>
+                                    <constraint firstAttribute="height" constant="169" id="zDT-lu-MBW"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Dr. Sarah Arthur is here to take care of you." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6oM-dN-vyW">
+                                <rect key="frame" x="180" y="37" width="88" height="95"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="88" id="qba-fH-Iix"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZPN-KY-mVb" firstAttribute="leading" secondItem="fEh-49-NTA" secondAttribute="leadingMargin" id="MvG-4X-VDv"/>
+                            <constraint firstItem="6oM-dN-vyW" firstAttribute="leading" secondItem="fEh-49-NTA" secondAttribute="leadingMargin" constant="160" id="PE2-il-H6D"/>
+                            <constraint firstItem="ZPN-KY-mVb" firstAttribute="top" secondItem="fEh-49-NTA" secondAttribute="topMargin" id="SaZ-yf-MCb"/>
+                            <constraint firstItem="6oM-dN-vyW" firstAttribute="top" secondItem="nQN-iK-qOq" secondAttribute="bottom" constant="17" id="vDa-mg-V1x"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bua-lM-d7Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1101" y="-350"/>
         </scene>
         <!--Meet Your Team-->
         <scene sceneID="bVI-ZZ-BLF">
@@ -635,7 +675,6 @@
         <image name="meetyourteam" width="975" height="635"/>
         <image name="moon" width="177" height="171"/>
         <image name="planYourDayDetailDog" width="975" height="635"/>
-        <image name="planyourday" width="975" height="635"/>
         <image name="playwithsparky" width="975" height="635"/>
         <image name="sun" width="168" height="168"/>
         <image name="sunrise" width="143" height="84"/>
