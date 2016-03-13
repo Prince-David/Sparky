@@ -57,7 +57,7 @@ class LoginViewController: UIViewController {
         
         let mainStoryboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
         self.navigationItem.hidesBackButton = true
-        let welcomeView : WelcomeViewController = mainStoryboard.instantiateViewControllerWithIdentifier("welcomeScreen") as! WelcomeViewController
+        let welcomeView : WelcomeViewController = mainStoryboard.instantiateViewControllerWithIdentifier("welcomeView") as! WelcomeViewController
 
         welcomeView.navigationItem.hidesBackButton = true
         let navigationController = UINavigationController(rootViewController: welcomeView)
