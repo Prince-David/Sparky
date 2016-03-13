@@ -48,6 +48,36 @@
             </objects>
             <point key="canvasLocation" x="248" y="377"/>
         </scene>
+        <!--Welcome-->
+        <scene sceneID="bVI-ZZ-BLF">
+            <objects>
+                <viewController title="Welcome" id="Pcd-mZ-fi0" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Nth-Fy-xl5"/>
+                        <viewControllerLayoutGuide type="bottom" id="VyF-dp-Jh4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RBq-Pv-w8v">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Welcome, Camille" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K0t-ww-5VI">
+                                <rect key="frame" x="156" y="40" width="238" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="K0t-ww-5VI" firstAttribute="centerX" secondItem="RBq-Pv-w8v" secondAttribute="centerX" constant="-25" id="3kX-KC-NQ6"/>
+                            <constraint firstItem="K0t-ww-5VI" firstAttribute="top" secondItem="Nth-Fy-xl5" secondAttribute="bottom" constant="20" id="S5s-iA-ues"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uzc-qU-Wfg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1061" y="395"/>
+        </scene>
         <!--Login Screen-->
         <scene sceneID="DW5-KH-bCy">
             <objects>
@@ -60,12 +90,6 @@
                         <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="frame-1" translatesAutoresizingMaskIntoConstraints="NO" id="yCL-Ok-XBN">
-                                <rect key="frame" x="180" y="90" width="240" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="Q3o-XW-2Ic"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your EMR username and password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mlb-Tu-iHd">
                                 <rect key="frame" x="180" y="184" width="240" height="14"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -88,23 +112,42 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xDR-g8-mfP">
+                                <rect key="frame" x="180" y="302" width="240" height="30"/>
+                                <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Log In">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginButtonPushed:" destination="of1-o9-fE4" eventType="touchUpInside" id="e3m-jD-M7s"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="puppy" translatesAutoresizingMaskIntoConstraints="NO" id="yCL-Ok-XBN">
+                                <rect key="frame" x="220" y="30" width="160" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="Q3o-XW-2Ic"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="xDR-g8-mfP" firstAttribute="leading" secondItem="Zgh-JV-kFc" secondAttribute="leading" id="0it-GS-Gbt"/>
                             <constraint firstItem="yCL-Ok-XBN" firstAttribute="centerX" secondItem="zRn-ij-46j" secondAttribute="centerX" id="AaJ-GY-0Ij"/>
                             <constraint firstItem="C3N-wN-9Tj" firstAttribute="trailing" secondItem="Mlb-Tu-iHd" secondAttribute="trailing" id="Bjl-ZF-8Aa"/>
-                            <constraint firstItem="Mlb-Tu-iHd" firstAttribute="leading" secondItem="yCL-Ok-XBN" secondAttribute="leading" id="J3i-cy-XLK"/>
-                            <constraint firstItem="Mlb-Tu-iHd" firstAttribute="top" secondItem="yCL-Ok-XBN" secondAttribute="bottom" constant="30" id="JdK-Bf-7EG"/>
+                            <constraint firstItem="Mlb-Tu-iHd" firstAttribute="leading" secondItem="yCL-Ok-XBN" secondAttribute="leading" constant="-40" id="J3i-cy-XLK"/>
+                            <constraint firstItem="Mlb-Tu-iHd" firstAttribute="top" secondItem="yCL-Ok-XBN" secondAttribute="bottom" constant="26" id="JdK-Bf-7EG"/>
+                            <constraint firstItem="xDR-g8-mfP" firstAttribute="trailing" secondItem="Zgh-JV-kFc" secondAttribute="trailing" id="O9O-ka-AFQ"/>
                             <constraint firstItem="Zgh-JV-kFc" firstAttribute="top" secondItem="C3N-wN-9Tj" secondAttribute="bottom" constant="15" id="QL7-Yy-SaA"/>
                             <constraint firstItem="C3N-wN-9Tj" firstAttribute="leading" secondItem="Mlb-Tu-iHd" secondAttribute="leading" id="QgG-bJ-KYA"/>
                             <constraint firstItem="tJb-MK-Q3q" firstAttribute="top" secondItem="C3N-wN-9Tj" secondAttribute="bottom" constant="293" id="aR9-ij-xaO"/>
-                            <constraint firstItem="tJb-MK-Q3q" firstAttribute="top" secondItem="yCL-Ok-XBN" secondAttribute="bottom" constant="382" id="bZ5-iW-JaA"/>
-                            <constraint firstItem="Mlb-Tu-iHd" firstAttribute="trailing" secondItem="yCL-Ok-XBN" secondAttribute="trailing" id="cPp-YU-cfK"/>
+                            <constraint firstItem="tJb-MK-Q3q" firstAttribute="top" secondItem="yCL-Ok-XBN" secondAttribute="bottom" constant="378" id="bZ5-iW-JaA"/>
+                            <constraint firstItem="Mlb-Tu-iHd" firstAttribute="trailing" secondItem="yCL-Ok-XBN" secondAttribute="trailing" constant="40" id="cPp-YU-cfK"/>
                             <constraint firstItem="Zgh-JV-kFc" firstAttribute="trailing" secondItem="C3N-wN-9Tj" secondAttribute="trailing" id="cT8-Zh-2nY"/>
                             <constraint firstItem="yCL-Ok-XBN" firstAttribute="leading" secondItem="zRn-ij-46j" secondAttribute="leadingMargin" id="eAa-19-eKR"/>
                             <constraint firstItem="Zgh-JV-kFc" firstAttribute="leading" secondItem="C3N-wN-9Tj" secondAttribute="leading" id="kSF-9S-wvn"/>
                             <constraint firstItem="C3N-wN-9Tj" firstAttribute="top" secondItem="Mlb-Tu-iHd" secondAttribute="bottom" constant="15" id="ui6-Ny-MEn"/>
-                            <constraint firstItem="yCL-Ok-XBN" firstAttribute="top" secondItem="FGs-Vk-Jag" secondAttribute="bottom" constant="26" id="wqz-r3-dre"/>
+                            <constraint firstItem="xDR-g8-mfP" firstAttribute="top" secondItem="Zgh-JV-kFc" secondAttribute="bottom" constant="14" id="woY-CQ-mjf"/>
+                            <constraint firstItem="yCL-Ok-XBN" firstAttribute="top" secondItem="FGs-Vk-Jag" secondAttribute="bottom" constant="30" id="wqz-r3-dre"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -114,7 +157,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="jQS-wx-mlo"/>
                     <connections>
+                        <outlet property="loginButton" destination="xDR-g8-mfP" id="owH-Rj-Ggv"/>
                         <outlet property="loginField" destination="C3N-wN-9Tj" id="rta-gN-Kzr"/>
+                        <outlet property="loginImage" destination="yCL-Ok-XBN" id="laD-KN-ypD"/>
                         <outlet property="passwordField" destination="Zgh-JV-kFc" id="FKf-Fo-0fz"/>
                     </connections>
                 </viewController>
@@ -143,6 +188,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="frame-1" width="512" height="268"/>
+        <image name="puppy" width="420" height="450"/>
     </resources>
 </document>

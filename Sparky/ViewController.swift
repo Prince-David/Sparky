@@ -16,10 +16,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         var imgListArray :[UIImage] = []
-        for countValue in 1...10
+        for countValue in 0...6
         {
             
-            var strImageName : String = "frame-\(countValue).png"
+            var strImageName : String = "dalmation-\(countValue).gif"
             var image  = UIImage(named:strImageName)
             if image != nil{
             imgListArray.append(image!)
