@@ -17,6 +17,17 @@ class WelcomeViewController: UIViewController {
         self.navigationItem.hidesBackButton = true
 
     }
+    @IBAction func openProvider(sender: AnyObject) {
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+        self.navigationItem.hidesBackButton = true
+        let dash : DashboardViewController = mainStoryboard.instantiateViewControllerWithIdentifier("Dashboard") as! DashboardViewController
+        
+        let navigationController = UINavigationController(rootViewController: dash)
+        navigationController.navigationBar.backgroundColor = self.navigationController?.navigationBar.backgroundColor
+        
+        
+        self.navigationController?.pushViewController(dash, animated: true)
+    }
     @IBAction func meetAction(sender: AnyObject) {
         let mainStoryboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
         self.navigationItem.hidesBackButton = true
@@ -41,6 +52,15 @@ class WelcomeViewController: UIViewController {
         self.navigationController?.pushViewController(planDay, animated: true)
     }
     @IBAction func playAction(sender: AnyObject) {
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+        self.navigationItem.hidesBackButton = true
+        let selfie : SelfieViewController = mainStoryboard.instantiateViewControllerWithIdentifier("SelfieView") as! SelfieViewController
+        
+        let navigationController = UINavigationController(rootViewController: selfie)
+        navigationController.navigationBar.backgroundColor = self.navigationController?.navigationBar.backgroundColor
+        
+        
+        self.navigationController?.pushViewController(selfie, animated: true)
     }
     
 }

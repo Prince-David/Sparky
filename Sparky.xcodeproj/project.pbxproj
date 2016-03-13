@@ -19,6 +19,8 @@
 		7B14DB321C95247700C37323 /* MeetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B14DB311C95247700C37323 /* MeetController.swift */; };
 		7B14DB341C95AD1D00C37323 /* PlanDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B14DB331C95AD1D00C37323 /* PlanDayViewController.swift */; };
 		7B14DB361C95C35900C37323 /* DoctorDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B14DB351C95C35900C37323 /* DoctorDetailViewController.swift */; };
+		7B14DB381C95D53A00C37323 /* SelfieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B14DB371C95D53A00C37323 /* SelfieViewController.swift */; };
+		7B14DB3A1C95E79C00C37323 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B14DB391C95E79C00C37323 /* DashboardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		7B14DB311C95247700C37323 /* MeetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetController.swift; sourceTree = "<group>"; };
 		7B14DB331C95AD1D00C37323 /* PlanDayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanDayViewController.swift; sourceTree = "<group>"; };
 		7B14DB351C95C35900C37323 /* DoctorDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoctorDetailViewController.swift; sourceTree = "<group>"; };
+		7B14DB371C95D53A00C37323 /* SelfieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfieViewController.swift; sourceTree = "<group>"; };
+		7B14DB391C95E79C00C37323 /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +171,8 @@
 				7B14DB311C95247700C37323 /* MeetController.swift */,
 				7B14DB331C95AD1D00C37323 /* PlanDayViewController.swift */,
 				7B14DB351C95C35900C37323 /* DoctorDetailViewController.swift */,
+				7B14DB371C95D53A00C37323 /* SelfieViewController.swift */,
+				7B14DB391C95E79C00C37323 /* DashboardViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -312,10 +318,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B14DB341C95AD1D00C37323 /* PlanDayViewController.swift in Sources */,
+				7B14DB3A1C95E79C00C37323 /* DashboardViewController.swift in Sources */,
 				7B14DB2E1C94CE9900C37323 /* LoginViewController.swift in Sources */,
 				7B14DB301C94F7ED00C37323 /* WelcomeViewController.swift in Sources */,
 				7B14DB361C95C35900C37323 /* DoctorDetailViewController.swift in Sources */,
 				7B14DAFD1C94974900C37323 /* ViewController.swift in Sources */,
+				7B14DB381C95D53A00C37323 /* SelfieViewController.swift in Sources */,
 				7B14DAFB1C94974900C37323 /* AppDelegate.swift in Sources */,
 				7B14DB321C95247700C37323 /* MeetController.swift in Sources */,
 			);
